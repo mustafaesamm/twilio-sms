@@ -29,17 +29,17 @@ require 'twilio-php-main/src/Twilio/autoload.php';
 
 
 // Your Account SID and Auth Token from twilio.com/console
-$sid = 'AC0104218953e7fb624b9f0c3d29302d00';
-$token = '937a35745d22230075221122159da6fb';
+$sid = ' put here Account SID';
+$token = 'put here auth ';
 $client = new Client($sid, $token);
 
 // Use the client to do fun stuff like send text messages!
 $client->messages->create(
     // the number you'd like to send the message to
-    '+9647827930979',
+    '+964123456789',
     [
         // A Twilio phone number you purchased at twilio.com/console
-        'from' => '+17206136103',
+        'from' => 'put here  trial number that twilio gave to you ',
         // the body of the text message you'd like to send
         'body' => "$message"
     ]
